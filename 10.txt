@@ -1,0 +1,67 @@
+-> sudo apt update
+
+Here 'sudo' refers to root. If it's mentioned in a command, root permission will be granted to the user only after they enter the password. The update command here is used to update all the files and packages for further use.
+
+-> sudo apt install apache2
+
+This command is used to install Apache software into the system.
+
+-> sudo ufw allow in "Apache"
+
+This command gives permission for the data transmitted by the Apache software through the firewall.
+
+ -> sudo ufw allow ssh
+
+This command gives permission for the SSH key to be transmitted  through the firewall.
+
+-> sudo ufw app list
+
+This shows the list of all sodtwares that is allowed through the firewall.
+
+<After this, to check whether Apache is running or not, you can open a web browser and type "localhost" or "127.0.0.1". If a pdf shows up about Apache, then the software is running>
+
+-> sudo apt-get install mysql-client
+
+-> sudo apt install mysql mysql-server
+
+This command installs MySQL software into the system.
+
+-> sudo mysql -u root -p
+
+This is to check if MySQL is working. If password is asked, press "enter".
+
+-> sudo apt install php libapache2-mod-php php-mysql
+-> sudo apt install php-sqlite3
+
+These commands are to install php and it's related softwares in to our system.
+
+-> sudo service apache2 restart
+
+To restart Apache2.
+
+-> sudo gedit /var/www/html/info.php
+
+This command will create a file 'info.php' in the above mentioned path and will open the file in the text editor. After it opens in the text editor, the following code must be added inside that file and should be saved too. The code is:
+
+<?php
+phpinfo();
+?>
+
+<After this, go to your web browser and type 'localhost/info.php' or '127.0.0.1/info.php'. If a file shows up, then web server is successfully set up. Else, it should be debugged.>
+
+
+ONLY COMMANDS
+
+sudo apt update
+sudo apt install apache2
+sudo ufw allow in "Apache"
+sudo ufw allow ssh
+sudo ufw app list
+sudo apt-get install mysql-client
+sudo apt install mysql mysql-server
+sudo mysql -u root -p
+sudo apt install php libapache2-mod-php php-mysql
+sudo apt install php-sqlite3
+sudo service apache2 restart
+sudo gedit /var/www/html/info.php
+
